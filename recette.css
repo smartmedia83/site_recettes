@@ -46,8 +46,8 @@ p.categorie {
 }
 
 div.categorie {
-    /* text-align: center; */
-    margin-bottom: 0px;
+    text-align: center;
+    margin-bottom:0px;
     margin-top: 0px;
     overflow: visible;
 }
