@@ -7,39 +7,16 @@
 body {
     background-color: #8BA1BB;
     font-family: comic sans MS;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-p.categorie{
-    color: white;
-    background-color: black;
-    display: inline-block;
-    margin-top: -15px;
-    margin-bottom: 0px;
-    padding: 8px 18px;
-    font-weight: bold;
-}
-
-div.categorie {
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-bottom: ;
-    overflow: visible;
+    margin:0;
 }
 
 div.contenu {
-   background-color: #FFFFFF;
-   margin: 60px 10em 80px 10em;      /* supprimer les margin 10em */
-   padding-top: 0px;
-   padding-right: 20px;
-   padding-bottom: 20px;
-   padding-left: 20px;
-   box-shadow: -1px 1px 12px #000000;
-   min-width: 350px;
-   overflow: visible;
+    background-color: #FFFFFF;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
+    box-shadow: -1px 1px 12px #000000;
+    /* min-width: 350px; */
+    overflow: visible;
 }
 
 h1 {
@@ -53,47 +30,62 @@ p.description {
     display: inline-block;
 }
 
+.centre {
+    text-align: center;
+    width: 100%;
+}
+
+p.categorie {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    padding: 8px 18px;
+    font-weight: bold;
+}
+
+div.categorie {
+    /* text-align: center; */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+
 .description {
     text-align: center;
     width: 100%;
 }
 
-div.separateur{
-    max-width: 15%;
-    background-color:#b6b5ba;
-    border: 1px;
-    padding: 1px;
+div.separateur {
+    width: 100px;
+    height: 1px;
+    background-color: black;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
 }
 
-.centre{
-    width: 100%;
-}
-
-div.info{
+div.info {
     position: relative;
 }
 
-table.info{
+table.info {
     position: absolute;
     bottom:0;
     color:#FFFFFF;
     width:100%;
     background-color:#6C829DC0;
-    text-align:center;
     height:100px;
 }
 
-table.info td{
+table.info td {
+    text-align: center;
     font-style: oblique;
-    padding-top: 0px;
     vertical-align: top;
 }
 
-table.info th{
+table.info th {
     font-size: 17px;
     vertical-align: bottom;
 }
@@ -111,7 +103,7 @@ div.colonne2 {
     float: right;
 }
 
-div.colonne1 h2{
+div.colonne1 h2 {
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
@@ -119,7 +111,7 @@ div.colonne1 h2{
     border-bottom: 5px solid #8ba1bb;
 }
 
-div.colonne2 h2{
+div.colonne2 h2 {
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
@@ -127,12 +119,12 @@ div.colonne2 h2{
     border-bottom: 5px solid #8ba1bb;
 }
 
-div.ingredients{
+div.ingredients {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-div.ingredients p{
+div.ingredients p {
     text-align: center;
     font-size: 14px;
     border: 2px solid lightgray;
@@ -140,15 +132,6 @@ div.ingredients p{
     padding-bottom: 10px;
     margin-top: 6px;
     margin-bottom: 6px;
-}
-
-div.colonne2 table {
-    
-}
-
-
-div.colonne2 table td {
-    text-align:;
 }
 
 table.preparation p.cercle {
@@ -165,41 +148,28 @@ table.preparation p.cercle {
     margin: 0;
 }
 
-table.preparation td{
+table.preparation td {
     vertical-align: top;
 }
 
-table.preparation tr{
+table.preparation tr {
     height: 45px;
 }
 
-table.preparation td.instruction{
+table.preparation td.instruction {
     font-size: 14px;
     padding-left: 15px;
 }
 
 
 
-/*
-div.colonne1 ul {
-    padding-left:0;
+/* Styles pour ordinateur */
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px;
+     }
+
 }
-
-
-div.colonne1 ul li {
-    padding-left: 0;
-    text-align: center;
-    list-style: none;
-}
-
-div.colonne2 ol li {   
-    text-align: center;
-    list-style-type:circle;
-}
-
-div.liste_en_p {
-    border-bottom: 3px solid black;
-}
-*/
-
-
+ 
