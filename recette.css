@@ -93,15 +93,13 @@ table.info th {
 
 div.colonne1 {
     margin-top: 20px;
-    margin-right: 10%;
-    width: 45%;
+    width: 100%;
     display: inline-block;
 }
 
 div.colonne2 {
     margin-top: 20px;
-    width: 45%;
-    float: right;
+    width: 100%;
 }
 
 div.colonne1 h2 {
@@ -182,6 +180,28 @@ table.preparation td.instruction {
     
     table.info th {
         font-size: 17px;
+    }
+
+    div.colonne1 {
+        margin-right: 10%;
+        width: 45%;
+    }
+    
+    div.colonne2 {
+        width: 45%;
+        float: right;
+    }
+
+}
+
+/* Styles pour écran sup 900px */
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        max-width: 665px;
     }
 
 }
